@@ -7,6 +7,8 @@ body {
   height: 360px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   position: relative;
   top: 20vh;
   overflow: hidden;
