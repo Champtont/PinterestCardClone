@@ -15,6 +15,7 @@ body {
 #pin-card img {
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 #save {
   background-color: #e60022;
@@ -26,6 +27,11 @@ body {
   margin-top: 1em;
   margin-right: 1em;
   padding: 0.6em;
+  transform: translateY(-100px);
+  transition: transform 0.5s ease-in;
+}
+#pin-card:hover #save {
+  transform: translateY(5%);
 }
 #bottom-control {
   display: flex;
@@ -34,7 +40,12 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
+  transform: translateY(100px);
   margin-bottom: 15px;
+  transition: transform 0.5s ease-in;
+}
+#pin-card:hover #bottom-control {
+  transform: translateY(-5%);
 }
 #text i {
   margin-right: 0.3em;
@@ -54,14 +65,31 @@ body {
   height: 28.4px;
   width: 28.4px;
   border-radius: 50%;
-}
-#upload i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #ellipsis {
   height: 28.4px;
   width: 28.4px;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .white {
   background-color: rgba(255, 255, 255, 0.852);
+}
+#overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+#overlay:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 100%;
 }
