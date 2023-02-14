@@ -1,4 +1,4 @@
-# EPICODE-U1-D4-HW
+# PinterestCardClone
 
 Pinterest card clone
-This is my homework for module one of day 4
+Early project that shows basic HTML and CSS skill
